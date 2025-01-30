@@ -8,14 +8,14 @@
     <link rel="stylesheet" href="./assets/css/site.css">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
-<body>
+<body class="bg-gray-900 text-white">
     <!-- Menú del Encabezado -->
-    <div class="contenedor-header bg-gray-800 text-white">
-        <header class="container mx-auto flex justify-between items-center py-4">
-            <div class="logo text-2xl font-bold">
-                <a href="#" class="hover:text-gray-400">Salvador Sastré</a>
+    <div class="contenedor-header bg-gray-900 text-white">
+        <header class="container mx-auto flex justify-between items-center py-4 px-4 md:px-0">
+            <div class="logo text-2xl font-bold text-yellow-400">
+                <a href="#" class="hover:text-yellow-600">Salvador Sastré</a>
             </div>
-            <nav>
+            <nav class="hidden md:block">
                 <ul class="flex space-x-4">
                     <li><a href="#inicio" class="hover:text-gray-400">Inicio</a></li>
                     <li><a href="#sobre-mi" class="hover:text-gray-400">Sobre Mí</a></li>
@@ -33,53 +33,82 @@
 
     <!-- Sección Inicio -->
     <section id="inicio" class="inicio bg-cover bg-center h-screen text-white flex items-center" style="background-image: linear-gradient(to top, rgba(30, 35, 38, 0.8), rgba(30, 35, 38, 1)), url(./assets/imgs/background.jpg);">
-        <div class="container mx-auto flex justify-center items-center h-screen">
+        <div class="container mx-auto flex justify-center items-center h-screen px-4 md:px-0">
             <div class="text-center">
                 <div class="contenedor-img">
-                    <img src="./assets/imgs/avatar.jpg" alt="Salvador Sastré" class="rounded-full w-50 h-50 mx-auto border-4 border-white-600">
+                    <img src="./assets/imgs/avatar.jpg" alt="Salvador Sastré" class="rounded-full w-40 h-40 md:w-50 md:h-50 mx-auto border-4 border-white-600">
                 </div>
-                <h1 class="text-6xl font-bold my-4">Salvador Sastré</h1>
-                <p class="text-xl">Desarrollador Fullstack</p>
+                <h1 class="text-4xl md:text-6xl font-bold my-4 text-yellow-400">Salvador Sastré</h1>
+                <p class="text-xl md:text-2xl">Desarrollador Fullstack</p>
                 <div class="redes mt-5 flex justify-center space-x-4">
-                    <a href="#" target="_blank" class="text-2xl mx-2 p-3 rounded-full bg-gray-900 hover:bg-gray-600 transition-colors"><i class="fa-brands fa-facebook"></i></a>
-                    <a href="#" target="_blank" class="text-2xl mx-2 p-3 rounded-full bg-gray-900 hover:bg-gray-600 transition-colors"><i class="fa-brands fa-twitter"></i></a>
-                    <a href="#" target="_blank" class="text-2xl mx-2 p-3 rounded-full bg-gray-900 hover:bg-gray-600 transition-colors"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="#" target="_blank" class="text-2xl mx-2 p-3 rounded-full bg-gray-900 hover:bg-gray-600 transition-colors"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="#" target="_blank" class="w-16 h-16 bg-gray-900 rounded-lg flex justify-center flex-col items-center transition duration-300 hover:bg-gray-700"><i class="fa-brands fa-facebook text-2xl"></i></a>
+                    <a href="#" target="_blank" class="w-16 h-16 bg-gray-900 rounded-lg flex justify-center flex-col items-center transition duration-300 hover:bg-gray-700"><i class="fa-brands fa-twitter text-2xl"></i></a>
+                    <a href="#" target="_blank" class="w-16 h-16 bg-gray-900 rounded-lg flex justify-center flex-col items-center transition duration-300 hover:bg-gray-700"><i class="fa-brands fa-instagram text-2xl"></i></a>
+                    <a href="#" target="_blank" class="w-16 h-16 bg-gray-900 rounded-lg flex justify-center flex-col items-center transition duration-300 hover:bg-gray-700"><i class="fa-brands fa-linkedin text-2xl"></i></a>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Sección Sobre Mi -->
-    <section id="sobremi" class="bg-gray-800 text-white">
-        <div class="container mx-auto py-20 text-center">
-            <h2 class="text-3xl font-bold mb-8">Sobre Mí</h2>
+    <section id="sobremi" class="bg-gray-900 text-white ">
+        <div class="container mx-auto py-20 text-center fila px-4 md:px-0">
+            <h2 class="text-4xl md:text-6xl font-bold mb-8">Sobre Mí</h2>
             <p class="text-justify mx-auto max-w-3xl mb-8"><span>Hola, mi nombre es Salvador Sastré</span> ipsum dolor sit amet, consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-            <div class="flex flex-col md:flex-row justify-center space-y-8 md:space-y-0 md:space-x-16">
+            <div class="flex flex-col md:flex-row justify-center space-y-8 md:space-y-0 md:space-x-32">
                 <!-- Datos Personales -->
-                <div class="col">
-                    <h3 class="text-2xl font-bold mb-4">Datos Personales</h3>
-                    <ul class="text-left">
-                        <li><span class="font-bold">Fecha de Nacimiento:</span> 28-08-1977</li>
-                        <li><span class="font-bold">Dirección:</span> Puebla, Puebla</li>
-                        <li><span class="font-bold">Teléfono:</span> 222 123 4567</li>
-                        <li><span class="font-bold">Correo:</span> sastré@gmail.com</li>
-                        <li><span class="font-bold">Website:</span> Puebla, Puebla</li>
+                <div class="flex flex-col justify-between">
+                    <h3 class="text-3xl font-bold mb-4 text-yellow-400">Datos Personales</h3>
+                    <ul class="text-left space-y-4">
+                        <li><span class="font-bold text-yellow-400">Fecha de Nacimiento:</span> 28-08-1977</li>
+                        <li><span class="font-bold text-yellow-400">Dirección:</span> Puebla, Puebla</li>
+                        <li><span class="font-bold text-yellow-400">Teléfono:</span> 222 123 4567</li>
+                        <li><span class="font-bold text-yellow-400">Correo:</span> sastré@gmail.com</li>
+                        <li><span class="font-bold text-yellow-400">Website:</span> Puebla, Puebla</li>
                     </ul>
                 </div>
                 <!-- Intereses -->
-                <div class="col">
-                    <h3 class="text-2xl font-bold mb-4">Intereses</h3>
-                    <div class="grid grid-cols-2 gap-4 text-left">
-                        <div><i class="fa-solid fa-gamepad"></i> <span>Videojuegos</span></div>
-                        <div><i class="fa-solid fa-headphones"></i> <span>Música</span></div>
-                        <div><i class="fa-solid fa-plane"></i> <span>Viajar</span></div>
-                        <div><i class="fa-solid fa-book"></i> <span>Leer</span></div>
-                        <div><i class="fa-solid fa-film"></i> <span>Cine</span></div>
-                        <div><i class="fa-solid fa-tv"></i> <span>Series</span></div>
-                        <div><i class="fa-solid fa-person-skating"></i> <span>Patinar</span></div>
+                <div>
+                    <h3 class="text-3xl font-bold mb-4 text-yellow-400">Intereses</h3>
+                    <div class="contenedor-intereses grid grid-cols-2 md:grid-cols-4 gap-4">
+                        <div class="w-24 h-24 bg-gray-800 rounded-lg flex justify-center flex-col items-center transition duration-300 hover:bg-gray-700">
+                            <i class="fa-solid fa-gamepad"></i>
+                            <span>Videojuegos</span>
+                        </div>
+                        <div class="w-24 h-24 bg-gray-800 rounded-lg flex justify-center flex-col items-center transition duration-300 hover:bg-gray-700">
+                            <i class="fa-solid fa-headphones"></i>
+                            <span>Música</span>
+                        </div>
+                        <div class="w-24 h-24 bg-gray-800 rounded-lg flex justify-center flex-col items-center transition duration-300 hover:bg-gray-700">
+                            <i class="fa-solid fa-plane"></i>
+                            <span>Viajar</span>
+                        </div>
+                        <div class="w-24 h-24 bg-gray-800 rounded-lg flex justify-center flex-col items-center transition duration-300 hover:bg-gray-700">
+                            <i class="fa-solid fa-book"></i>
+                            <span>Leer</span>
+                        </div>
+                        <div class="w-24 h-24 bg-gray-800 rounded-lg flex justify-center flex-col items-center transition duration-300 hover:bg-gray-700">
+                            <i class="fa-solid fa-film"></i>
+                            <span>Cine</span>
+                        </div>
+                        <div class="w-24 h-24 bg-gray-800 rounded-lg flex justify-center flex-col items-center transition duration-300 hover:bg-gray-700">
+                            <i class="fa-solid fa-tv"></i>
+                            <span>Series</span>
+                        </div>
+                        <div class="w-24 h-24 bg-gray-800 rounded-lg flex justify-center flex-col items-center transition duration-300 hover:bg-gray-700">
+                            <i class="fa-solid fa-person-skating"></i>
+                            <span>Patinar</span>
+                        </div>
+                        <div class="w-24 h-24 bg-gray-800 rounded-lg flex justify-center flex-col items-center transition duration-300 hover:bg-gray-700">
+                            <i class="fa-solid fa-person-swimming"></i>
+                            <span>Nadar</span>
+                        </div>
                     </div>
                 </div>
+
+            </div>
+            <div class="mt-12">
+                <a href="#" class="bg-yellow-400 text-gray-900 font-bold py-2 px-4 rounded-lg hover:bg-yellow-500 transition duration-300"><i class="fa-solid fa-download"></i> Descargar CV</a>
             </div>
         </div>
     </section>
