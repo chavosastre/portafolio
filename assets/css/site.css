@@ -23,3 +23,220 @@ html{
   flex-direction: column;
   align-items: center;
 } */
+
+.progreso{
+  background-color: #1CB698;
+  position: absolute;
+  top: o;
+  left: 0;
+  height: 8px;
+} 
+
+.barra-skill span{
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  background-color: #1CB698;
+  border-radius: 50px;
+  line-height: 40px;
+  text-align: center;
+  top: -17px;
+  right: -15px;
+  font-size: 14px;
+} 
+
+.csharp {
+  width: 0%;
+  animation: csharp 2s forwards;
+}
+
+@keyframes csharp {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 80%;
+  }
+}
+
+.javascript {
+  width: 0%;
+  animation: javascript 2s forwards;
+}
+
+@keyframes javascript {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 80%;
+  }
+}
+
+.htmlcss {
+  width: 0%;
+  animation: htmlcss 2s forwards;
+}
+
+@keyframes htmlcss {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 95%;
+  }
+}
+
+.sql {
+  width: 0%;
+  animation: sql 2s forwards;
+}
+
+@keyframes sql {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 70%;
+  }
+}
+
+.git {
+  width: 0%;
+  animation: git 2s forwards;
+}
+
+@keyframes git {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 85%;
+  }
+}
+
+.apirest {
+  width: 0%;
+  animation: apirest 2s forwards;
+}
+
+@keyframes apirest {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 90%;
+  }
+}
+
+.angular {
+  width: 0%;
+  animation: angular 2s forwards;
+}
+
+@keyframes angular {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 65%;
+  }
+}
+
+.comprensionhtmlcss {
+  width: 0%;
+  animation: comprensionhtmlcss 2s forwards;
+}
+
+@keyframes comprensionhtmlcss {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 95%;
+  }
+}
+
+.datosalgoritmos {
+  width: 0%;
+  animation: datosalgoritmos 2s forwards;
+}
+
+@keyframes datosalgoritmos {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 85%;
+  }
+}
+
+.equipo {
+  width: 0%;
+  animation: equipo 2s forwards;
+}
+
+@keyframes equipo {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+.ideas {
+  width: 0%;
+  animation: ideas 2s forwards;
+}
+
+@keyframes ideas {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 90%;
+  }
+}
+
+.adaptacion {
+  width: 0%;
+  animation: adaptacion 2s forwards;
+}
+
+@keyframes adaptacion {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 95%;
+  }
+}
+
+.solucion {
+  width: 0%;
+  animation: solucion 2s forwards;
+}
+
+@keyframes solucion {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 80%;
+  }
+}
+
+.aprendizaje {
+  width: 0%;
+  animation: aprendizaje 2s forwards;
+}
+
+@keyframes aprendizaje {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
