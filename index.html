@@ -26,7 +26,20 @@
                 </ul>
             </nav>
             <div class="nav-responsive text-2xl cursor-pointer md:hidden">
-                <i class="fa-solid fa-bars"></i>
+                <i class="fa-solid fa-bars text-yellow-400 hover:text-yellow-600"></i>
+                <ul id="menu-responsive" class="hidden flex flex-col space-y-2 mt-2 text-sm">
+                    <li><a href="#inicio" class="hover:text-gray-400 underline">Inicio</a></li>
+                    <li><a href="#sobre-mi" class="hover:text-gray-400 underline">Sobre Mí</a></li>
+                    <li><a href="#skills" class="hover:text-gray-400 underline">Skills</a></li>
+                    <li><a href="#curriculum" class="hover:text-gray-400 underline">Curriculum</a></li>
+                    <li><a href="#portafolio" class="hover:text-gray-400 underline">Portafolio</a></li>
+                    <li><a href="#contacto" class="hover:text-gray-400 underline">Contacto</a></li>
+                </ul>
+                <script>
+                    document.querySelector('.nav-responsive').addEventListener('click', function() {
+                        document.getElementById('menu-responsive').classList.toggle('hidden');
+                    });
+                </script>
             </div>
         </header>
     </div>
@@ -60,10 +73,10 @@
                 <div class="flex flex-col justify-between">
                     <h3 class="text-3xl font-bold mb-4 text-yellow-400">Datos Personales</h3>
                     <ul class="text-left space-y-4">
-                        <li><span class="font-bold text-yellow-400">Fecha de Nacimiento:</span> 28-08-1977</li>
-                        <li><span class="font-bold text-yellow-400">Dirección:</span> Puebla, Puebla</li>
-                        <li><span class="font-bold text-yellow-400">Teléfono:</span> 222 123 4567</li>
-                        <li><span class="font-bold text-yellow-400">Correo:</span> sastré@gmail.com</li>
+                        <li><span class="font-bold text-yellow-400">Fecha de Nacimiento:</span> 29-08-1977</li>
+                        <li><span class="font-bold text-yellow-400">Dirección:</span> Calle 28 C #238, Mérida Yucatán.</li>
+                        <li><span class="font-bold text-yellow-400">Teléfono:</span> 933 136 0804</li>
+                        <li><span class="font-bold text-yellow-400">Correo:</span> chavosastre@gmail.com</li>
                         <li><span class="font-bold text-yellow-400">Website:</span> Puebla, Puebla</li>
                     </ul>
                 </div>
